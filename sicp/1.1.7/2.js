@@ -1,5 +1,5 @@
 // SICP JS 1.1.7
-
+"use strict";
 function abs(x) {
     return x >= 0 ? x : -x;
 }
