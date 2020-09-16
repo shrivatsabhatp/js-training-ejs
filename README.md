@@ -1,26 +1,31 @@
 # js-trainig-ejs
-This repository is my working on the javaScript programming
+This repository is my working on the javaScript programming language.
 
+.
 
+.
 
+.
 
+.
 
+.
 
+.
 
+.
 
+.
 
+.
 
+.
 
+.
 
+.
 
-
-
-
-
-
-
-
-
+.
 
 > [Referece Text book 1](https://eloquentjavascript.net/)
 
