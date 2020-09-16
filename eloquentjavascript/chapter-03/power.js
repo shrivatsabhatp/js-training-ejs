@@ -1,3 +1,4 @@
+"use strict";
 const power = (base, exponent) => {
     let result = 1;
     for (let count = 0; count < exponent; count++) {
@@ -5,3 +6,5 @@ const power = (base, exponent) => {
     }
     return result;
 };
+
+power(2,3);

@@ -1,3 +1,4 @@
+"use strict";
 function plus(a, b) { return a + b; }
 function minus(a, b) { return a - b; }
 function a_plus_abs_b(a, b) {
