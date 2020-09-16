@@ -7,13 +7,13 @@ Ex:
 >rightJustify('monty')
                                                                 monty
 */
-
+"use strict";
 const spaceLen = 70;
 
 function rightJustify(s) {
     let output = '';
     for (let index = 1; index < spaceLen - s.length; index++) {
-        output += ' '; 
+        output += ' ';
     }
     return output + s;
 }

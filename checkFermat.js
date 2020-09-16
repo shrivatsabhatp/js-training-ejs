@@ -22,22 +22,22 @@ const b = (18 - (17 * Math.sqrt(2)));
 const c = 42;
 const n = 3;
 */
-
+"use strict";
 const a = 1;
 const b = 2;
 const c = 3;
 const n = 4;
 
-function power(base, exponent, total = 1) {
+const power = function (base, exponent, total = 1) {
     if (exponent == 0) {
         return total;
     }
     return power(base, exponent - 1, base * total);
-}
+};
 // or use Math.pow(base, pwr)
 
 function checkFermat(a, b, c, n) {
-    if (n > 2  && power(a, n) + power(b, n) === power(c, n)) {
+    if (n > 2 && power(a, n) + power(b, n) === power(c, n)) {
         return "Holy smokes, Fermat was wrong!";
     }
     return "No, that doesn’t work.";

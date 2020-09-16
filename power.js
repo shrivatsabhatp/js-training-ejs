@@ -5,20 +5,20 @@ Hint: A recursive definition of this operation is x^n = x · x^(n−1). Also, re
 
 Optional challenge: you can make this method more efficient, when n is even, using x^n = (x^(n/2))^2.
 */
-
-function power1(base, pwr, total = 1) {
-    if (pwr == 0) {
+"use strict";
+function power1(base, exp, total = 1) {
+    if (exp == 0) {
         return total;
     }
-    return power1(base, pwr - 1, base * total);
+    return power1(base, exp - 1, base * total);
 }
 
-function power(base, pwr) {
-    if (pwr == 0) {
-        return 1;
-    }
-    return (base * power(base, pwr -1));
-}
+// function power(base, exp) {
+//     if (exp == 0) {
+//         return 1;
+//     }
+//     return (base * power(base, exp - 1));
+// }
 
-console.log(power(2,3));
+// console.log(power(2,3));
 console.log(power1(2, 3));
