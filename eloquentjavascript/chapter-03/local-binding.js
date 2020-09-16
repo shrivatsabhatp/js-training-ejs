@@ -1,3 +1,4 @@
+"use strict";
 function wrapValue(n) {
     let local = n;
     return () => local;
