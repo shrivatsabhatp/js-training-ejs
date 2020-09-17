@@ -1,4 +1,8 @@
 "use strict";
+/*
+feature—being able to reference a specific instance of a local binding in an enclosing scope—is called closure
+*/
+
 function wrapValue(n) {
     let local = n;
     return () => local;
@@ -10,6 +14,10 @@ console.log(wrap1());
 // → 1
 console.log(wrap2());
 // → 2
+
+/*
+With a slight change, we can turn the previous example into a way to create functions that multiply by an arbitrary amount.
+*/
 
 function multiplier(factor) {
     return number => number * factor;
