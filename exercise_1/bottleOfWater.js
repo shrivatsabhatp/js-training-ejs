@@ -18,12 +18,20 @@ ya’ can’t take one down, ya’ can’t pass it around,
 And then the song (finally) ends.
 */
 "use strict";
+
 function poem(count = 99) {
     for (let index = count; index > 0; index--) {
-        console.log(`${index} bottles of water on the wall,
-        \n${index} bottles of water,\nya’ take one down,\nya’ pass it around,${index - 1} bottles of water on the wall.\n`);
+        console.log(`${index} bottles of water on the wall,`);
+        console.log(`${index} bottles of water,`);
+        console.log(`ya’ take one down,`); 
+        console.log(`ya’ pass it around,`);
+        console.log(`${index - 1} bottles of water on the wall.\n`);
     }
-    console.log("No bottles of water on the wall,\nno bottles of water,\nya’ can’ t take one down, ya’ can’ t pass it around, \n’cause there are no more bottles of water on the wall!");
+    console.log(`No bottles of water on the wall,`);
+    console.log(`no bottles of water,`);
+    console.log(`ya’ can’ t take one down,`); 
+    console.log(`ya’ can’ t pass it around,`);
+    console.log(`’cause there are no more bottles of water on the wall!\n`);
 }
 
-poem();
+poem(10);
