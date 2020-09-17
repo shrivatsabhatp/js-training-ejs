@@ -14,13 +14,13 @@ that is to be counted (rather than counting only uppercase “B” characters). 
 const countBs = (string) => {
     let count = 0;
     for (let index = 0; index < string.length; index++) {
-        if (string[index] === 'B') count++;
+        if (string[index] === "B") count++;
     }
     return count;
 };
 
 const countChar = (string, char) => {
-    string = string || 'empty';
+    string = string || "empty";
     let count = 0;
     for (let index = 0; index < string.length; index++) {
         if (string[index] === char) count++;
@@ -29,4 +29,4 @@ const countChar = (string, char) => {
 };
 
 console.log(countBs("BBC"));
-console.log(countChar());
+console.log(countChar("helllo", "l"));
