@@ -1,6 +1,6 @@
 "use strict";
 
-let square = x => x*x;
+let square = x => x * x;
 
 function test(label, body) {
     if (!body()) console.log(`Failed: ${label}`);
