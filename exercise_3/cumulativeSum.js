@@ -7,3 +7,18 @@ from the original array. For example:
 >>> cumulativeSum(t)
 [1, 3, 6]
 */
+
+"use strict";
+
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+const cumulativeSum = array => {
+    let cSum = [];
+    for(let number of array) {
+        cSum.push(array.slice(0, number).reduce(reducer));
+    }
+    return cSum;
+};
+
+let array = [1, 2, 3];
+console.log(cumulativeSum(array));

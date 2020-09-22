@@ -53,12 +53,12 @@ Two words are anagrams if you can rearrange the letters from one to spell the ot
  Write a function called isAnagram that takes two strings and returns true if they are anagrams.
  */
 
- /* 7
+/* 7
  Write a function called hasDuplicates that takes an array and returns true 
  if there is any element that appears more than once. It should not modify the original array.
  */
 
- /* 8
+/* 8
  A word is said to be a “doubloon” if every letter that appears in the word appears exactly twice. 
  Here are some example doubloons found in the dictionary:
 
