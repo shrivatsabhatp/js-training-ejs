@@ -11,15 +11,27 @@ To ignore case, invoke the toLowerCase method before checking.
 
 "use strict";
 
+// let isDoubloon = string => {
+//     let count = 0;
+//     let s = string.toLowerCase().split("");
+//     s.some(
+//         (element, index, array) => {
+//             // if(array.lastIndexOf(element) !== index) {
+//             //     count++;
+//             // }
+//             array.lastIndexOf(element) !== index && count++;
+//         }
+//     );
+//     return count % 2 === 0;
+// };
+
 let isDoubloon = string => {
+    let count = 0;
     let s = string.toLowerCase().split("");
     s.some(
-        (element, index, array, argument) => {
-            if(array.lastIndexOf(element) !== index) {
-                array = array.slice(0, index) + array.slice(array.lastIndexOf(element)+1);
-            }
-        }
+        (element, index, array) => array.lastIndexOf(element) !== index && count++
     );
+    return count % 2 === 0;
 };
 
-console.log(isDoubloon("Anna"));
+console.log(isDoubloon("redder"));
