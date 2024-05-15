@@ -96,3 +96,8 @@ Thumbs.db
 
 # Linters
 .eslintrc
+
+# excalidraw
+*.excalidraw
+
+tempCodeRunnerFile.js
